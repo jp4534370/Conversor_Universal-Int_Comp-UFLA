@@ -68,7 +68,12 @@ string binario_para_octal(string binario) {
         int soma = (b2 * 4) + (b1 * 2) + b0;
         resultado = resultado + Letra_ou_numero(soma);
     }
-    return resultado;
+
+    int inicio = 0;
+    while (inicio < (int)resultado.size() - 1 && resultado[inicio] == '0') {
+        inicio++;
+    }
+    return resultado.substr(inicio);
 }
 
 string binario_para_hexadecimal(string binario) {
@@ -84,7 +89,12 @@ string binario_para_hexadecimal(string binario) {
         int soma = (b3 * 8) + (b2 * 4) + (b1 * 2) + b0;
         resultado = resultado + Letra_ou_numero(soma);
     }
-    return resultado;
+
+    int inicio = 0;
+    while (inicio < (int)resultado.size() - 1 && resultado[inicio] == '0') {
+        inicio++;
+    }
+    return resultado.substr(inicio);
 }
 
 string octal_para_binario(string octal) {
