@@ -13,6 +13,10 @@ O projeto oferece:
 
 O objetivo é suportar os casos de uso comuns em introdução à computação e a representação posicional de números.
 
+## Link para o vídeo:
+
+- https://youtu.be/1sXVHC9gdpk
+
 ## Estrutura do repositório
 
 - `srcmain.cpp` - código do menu interativo e lógica de uso do usuário.
